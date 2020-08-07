@@ -1,0 +1,24 @@
+<div class="film-card container">
+    <img src="https://image.tmdb.org/t/p/w500{{poster_path}}" alt="filmImg" class="img-film-card">
+
+    <div class="movieInfo">
+        <h2>{{title}}</h2>
+        <p class="bgrn-p ">vote / votes <span class="spase">{{vote_average}} / {{vote_count}}</span></p>
+        <p>popularity <span class="spase"></span>{{popularity}}</span></p>
+        <p class="bgrn-p">origin title<span class="spase"></span>{{original_title}}</span></p>
+        <p class="float-p-genre">genre</p>
+        <ul>{{#each genres}}
+            <li class="genre">{{this.name}}</li>
+            {{/each}}
+        </ul>
+        <article class='about-film'>
+            <h3>About</h3>
+            <p>{{overview}}</p>
+        </article>
+
+        <button class="btnAddWatch" data-action="add" data-movieID="{{id}}">Add to watched</button>
+        <button class="btnAddQueue" data-action="add" data-movieID="{{id}}">Add to queue</button>
+
+    </div>
+
+</div>

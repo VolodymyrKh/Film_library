@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Filmoteka</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"
+    />
+  </head>
+
+  <body>
+    <header class="page-header">
+      <div class="nav-container">
+        <nav class="container page-nav">
+          <a
+            href="#"
+            id="blink7"
+            class="site-logo"
+            onclick="location.replace('/')"
+            >Filmoteka</a
+          >
+          <ul class="list site-navigation">
+            <li class="site-navigation__item">
+              <a
+                href="#"
+                class="link site-navigation__link"
+                id="nav-home"
+                onclick="location.replace('/')"
+                >Home</a
+              >
+            </li>
+            <li class="site-navigation__item">
+              <a href="#" class="link site-navigation__link" id="nav-libery"
+                >My Library</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <nav class="sidebar">
+        <input class="sidebar_watch" type="button" value="Add Watch" />
+        <input class="sidebar_queue" type="button" value="Add Queue" />
+      </nav>
+    </header>
+    <main class="main container" id="container">
+      <form class="search-form" action="" method="get">
+        <input
+          name="s"
+          placeholder="🔍 Write movie name and click Enter"
+          type="search"
+          id="search-form"
+        />
+      </form>
+      <section class="card_container">
+        <!-- В этот список рендерим сарточки -->
+        <div class="card_list container"></div>
+      </section>
+      <input class="loadMoreBtn" type="button" value="Load More......" />
+    </main>
+
+    <footer class="footer">
+      <p class="copyright">
+        © 2020 Filmoteka created by
+        <a href="https://github.com/IP777">Piter </a>
+        <a href="https://github.com/SerhiiZinkevych">Sergiy </a>
+        <a href="https://github.com/VolodymyrKh">Volodymyr </a>
+        <a href="https://github.com/RenatKost">Renat </a>
+        <a href="https://github.com/ArtemKardanov">Artem </a>
+      </p>
+    </footer>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"
+    ></script>
+  </body>
+</html>

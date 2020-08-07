@@ -1,0 +1,163 @@
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300i,400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap');
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #999999;
+  min-width: 1200px;
+}
+
+.button {
+  border: none;
+  cursor: pointer;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  display: block;
+  text-decoration: none;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.main {
+  margin-top: 120px;
+  margin-bottom: 35px;
+}
+/* ----------------------------Main-page.hbs------------------------------------------------------------------- */
+.card_container {
+  margin-bottom: 20px;
+}
+
+.movie-cards {
+  display: flex;
+  flex-wrap: wrap;
+  text-decoration: none;
+  list-style: none;
+  align-content: space-between;
+}
+
+.itemCard {
+  height: 300px;
+  width: 550px;
+  border-radius: 3px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  position: relative;
+  margin: 8px 8px;
+  background-image: url(http://placehold.it/300x550);
+}
+
+.itemCard img {
+  height: 300px;
+  width: 550px;
+  border-radius: 3px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.itemCard img:hover {
+  transform: scale(1.03);
+}
+
+.itemCard h2 {
+  position: absolute;
+  top: 80%;
+  left: 5%;
+  width: 500px;
+  color: aliceblue;
+  text-shadow: 1px 3px 2px black;
+  opacity: 0.8;
+  font-size: 18px;
+  padding: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.loadMoreBtn {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 70px;
+  border: 0;
+  background-color: #fff;
+  font-size: 17px;
+}
+
+.loadMoreBtn:hover {
+  padding: 3px;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+.hide {
+  display: none;
+  visibility: hidden;
+}
+
+.film-card {
+  margin-bottom: 100px;
+}
+
+.slick-dotted {
+  margin-bottom: 80px !important;
+}
+.slider-item > a {
+  position: relative;
+}
+.slider-item > a > h2 {
+  text-decoration: none;
+  position: absolute;
+  top: 80%;
+  /* left: 50%;
+  transform: translateX(-50%); */
+
+  width: 500px;
+  text-align: center;
+  color: aliceblue;
+  text-shadow: 1px 3px 2px black;
+  opacity: 0.8;
+  font-size: 17px;
+  padding: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.similarTitle {
+  margin: 10px;
+  text-align: center;
+  color: rgb(43, 43, 43);
+}
+
+.copyright > a {
+  text-decoration: none;
+  color: rgb(24, 23, 23);
+}
+
+.copyright > a:hover {
+  color: white;
+}
